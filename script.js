@@ -3,6 +3,7 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+
 function filterFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("myInput");
