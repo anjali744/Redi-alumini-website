@@ -14,47 +14,43 @@ body {
 }
 /*header*/
 header{
-    position: fixed;
-    width: 100%;
     background-color: white;
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     height: 9vh;
-    padding: 10px;
 }
-
-.nav-logo {
-    width: 55%;
-    height: 72px;
+.logo {
+    height: 53px;
+    margin-left: 87px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
-
-
 /*nav details*/
 .container{
     display: inline;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .nav-links {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    margin-right: 79px;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .nav-links li {
     margin-left: 15px;
     list-style: none;
 }
 a{
-    transition: color 0.3s;
-    text-decoration: none;
-    color: black;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: black;
 }
 a:hover{
     color: rgb(185, 183, 182);
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 /*search*/
 .fa {
@@ -65,7 +61,6 @@ a:hover{
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
 
@@ -113,14 +108,34 @@ button{
 
 /*footer*/
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: rgb(205, 203, 201);
-    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.row{
     display: flex;
 }
+.column {
+    flex: 1;
+    width: 15rem;
+    height: 19vh;
+}
+.list-unstyled {
+  list-style: none;
+  margin-bottom: 10px;  
+}
+li {
+  padding: 5px;
+  margin: 5px;
+}
+h5{
+  padding: 5px;
+  margin: 5px;
+}
+/*Responsive layout*/
+
 
 /* Yui started here */
 h2 {
