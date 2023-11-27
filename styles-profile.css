@@ -1,5 +1,96 @@
 body {
-    background-color: #f0f0f0;
+    background-color: white;
     font-family: 'NunitoSans',sans-serif ;
+}
+
+/*header*/
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+}
+.logo {
+    height: 53px;
+    margin-left: 87px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+/*nav details*/
+.container{
+    display: inline;
+    font-size: 1.3rem;
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 79px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.nav-links li {
+    margin-left: 15px;
+    list-style: none;
+}
+a{
+  transition: color 0.3s;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+    color: rgb(185, 183, 182);
+    font-size: 1.3rem;
+}
+/*search*/
+.fa {
+    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*Yui Started here*/
+/*flex-container*/
+.flex-container {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*height: 200px;*/
+    align-items: center;
+  }
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+}
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.picture {
+    margin: 20px 20px 20px 20px;
+}
+.basic-info, .portfolio-cv {
+    background-color: gainsboro;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+}
+
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
