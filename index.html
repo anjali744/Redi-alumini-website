@@ -14,10 +14,14 @@
   </head>
   <body>
     <header class="header">
-        <a href="https://www.redi-school.org/">
-          <img src="asset/rediLogo.png"  class="logo" alt="Redi School logo" />
-        </a>
-      </div>
+      <a href="https://www.redi-school.org/">
+        <img
+          src="asset/rediRemoveBackgroud.png"
+          class="logo"
+          alt="Redi School logo"
+        />
+      </a>
+
       <div class="container">
         <div class="detail">
           <ul class="nav-links">
@@ -27,13 +31,14 @@
             <li><a href="#">Project</a></li>
             <li><a href="https://www.redi-school.org/blog">Blog</a></li>
             <li><a href="https://www.redi-school.org/contact">Contact</a></li>
-            <li><div class="search-container">
-              <form action="/action_page.php">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div></li>
+            <li>
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </li>
           </ul>
-          
         </div>
       </div>
     </header>
@@ -41,84 +46,155 @@
       <div class="top">
         <h1>Welcome to our Alumni database!</h1>
         <h2>Find our new employee here</h2>
-  
+
+        <!--anj adding dropdown-->
+        <div class="filter">
+          <select id="categoryFilter">
+            <option value="">Select Category</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="UX/UI Designer">UX/UI Designer</option>
+            <option value="Data Analytics">Data Analytics</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+          </select>
+
+          <select id="durationFilter">
+            <option value="">Select Duration</option>
+            <option value="Full time">Full time</option>
+            <option value="Part time">Part time</option>
+            <option value="Internship">Internship</option>
+          </select>
+
+          <select id="locationFilter">
+            <option value="">Select Location</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Munich">Munich</option>
+            <option value="Hamburg">Hamburg</option>
+          </select>
           <div class="get-start-button">
-            <button type="button" onclick="">
-              Get Started ->
-            </button>
+            <button type="button" onclick="">Get Started -></button>
           </div>
         </div>
       </div>
-      
-      <div> <!--Yui started here -->
-        <main> <!-- Y: card section starts here -->
-            <div class="section-title">
-                <h1>Some of our fantastic graduates</h1>
-                <p>Use the filters above to find the exact person you are searching for.</p>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <div id="grid-item1">
-                        <img src="https://ca.slack-edge.com/T024UKMKVCL-U05S6HG0K0Q-c46e9cef3a0c-512" alt="" style="width: 100%;"> <!-- image took from slack -->
-                        <h4><b>Natalia Silvestre</b></h4>
-                        <p>Looking for: Full time</p>
-                        <p>Top skill: UI design</p>
-                        <a href="profile.html" target="_blank"></a>  <!-- Y: need to figure out how to not hard code this action/event. -->
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div id="grid-item2">
-                        <img src="https://ca.slack-edge.com/T024UKMKVCL-U05NUE5AYPP-d6079d6da160-512" alt="" style="width: 100%;"> 
-                        <h4><b>Maria Del Pilar Salerno</b></h4>
-                        <p>Looking for: Part time</p>
-                        <p>Top skill: UI design</p>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div id="grid-item3">
-                        <img src="https://ca.slack-edge.com/T024UKMKVCL-U05QF29GW91-8a8d5f774de3-512" alt="" style="width: 100%;"> 
-                        <h4><b>Eva Mozule</b></h4>
-                        <p>Looking for: Internship</p>
-                        <p>Top skill: UX design</p>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div id="grid-item4">
-                        <img src="https://ca.slack-edge.com/T024UKMKVCL-U05QTGRC0CB-36af5cd4cf75-512" alt="" style="width: 100%;">
-                        <h4><b>Emily Ferguson</b></h4>
-                        <p>Looking for: Full time</p>
-                        <p>Top skill: UX design</p>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div id="grid-item5">
-                        <img src="https://ca.slack-edge.com/T024UKMKVCL-U04TYE2L4JU-6ba056b0026a-512" alt="" style="width: 100%;">
-                        <h4><b>Anjali Kumari</b></h4>
-                        <p>Looking for: Part time</p>
-                        <p>Top skill: Javascript</p>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div id="grid-item6">
-                        <img src="https://ca.slack-edge.com/T024UKMKVCL-U05NXBNDD9Q-ab28f34a5e12-512" alt="" style="width: 100%;">
-                        <h4><b>Yui Suzuki</b></h4>
-                        <p>Looking for: Internship</p>
-                        <p>Top skill: Javascript</p>
-                    </div>
-                </div>
+
+      <!--Yui started here -->
+      <div>
+        <main>
+          <!-- Y: card section starts here -->
+          <div class="section-title">
+            <h1>Some of our fantastic graduates</h1>
+            <p>
+              Use the filters above to find the exact person you are searching
+              for.
+            </p>
+          </div>
+          <div class="grid-container">
+            <div
+              class="grid-item"
+              onclick="handleGraduateClick('Natalia Silvestre', 'Full time', 'UI design')"
+            >
+              <div class="grid-item1">
+                <img
+                  src="https://ca.slack-edge.com/T024UKMKVCL-U05S6HG0K0Q-c46e9cef3a0c-512"
+                  alt=""
+                  style="width: 100%"
+                />
+                <!-- image took from slack -->
+                <h4><b>Natalia Silvestre</b></h4>
+                <p>Looking for: Full time</p>
+                <p>Top skill: UI design</p>
+                <a href="profile.html"></a>
+                <!-- Y: need to figure out how to not hard code this action/event. -->
               </div>
-            
-            
-        </main> 
-        
-    </div> <!-- Y: card section ends here -->
+            </div>
+            <div
+              class="grid-item"
+              onclick="handleGraduateClick('Maria Del Pilar Salerno', 'Part time', 'UI design')"
+            >
+              <div class="grid-item2">
+                <img
+                  src="https://ca.slack-edge.com/T024UKMKVCL-U05NUE5AYPP-d6079d6da160-512"
+                  alt=""
+                  style="width: 100%"
+                />
+                <h4><b>Maria Del Pilar Salerno</b></h4>
+                <p>Looking for: Part time</p>
+                <p>Top skill: UI design</p>
+              </div>
+            </div>
+            <div
+              class="grid-item"
+              onclick="handleGraduateClick('Eva Mozule', 'Internship', 'UX design')"
+            >
+              <div class="grid-item3">
+                <img
+                  src="https://ca.slack-edge.com/T024UKMKVCL-U05QF29GW91-8a8d5f774de3-512"
+                  alt=""
+                  style="width: 100%"
+                />
+                <h4><b>Eva Mozule</b></h4>
+                <p>Looking for: Internship</p>
+                <p>Top skill: UX design</p>
+              </div>
+            </div>
+            <div
+              class="grid-item"
+              onclick="handleGraduateClick('Emily Ferguson', 'Full time', 'UX design')"
+            >
+              <div class="grid-item4">
+                <img
+                  src="https://ca.slack-edge.com/T024UKMKVCL-U05QTGRC0CB-36af5cd4cf75-512"
+                  alt=""
+                  style="width: 100%"
+                />
+                <h4><b>Emily Ferguson</b></h4>
+                <p>Looking for: Full time</p>
+                <p>Top skill: UX design</p>
+              </div>
+            </div>
+            <div
+              class="grid-item"
+              onclick="handleGraduateClick('Anjali Kumari', 'Part time', 'Javascript')"
+            >
+              <div class="grid-item5">
+                <img
+                  src="https://ca.slack-edge.com/T024UKMKVCL-U04TYE2L4JU-6ba056b0026a-512"
+                  alt=""
+                  style="width: 100%"
+                />
+                <h4><b>Anjali Kumari</b></h4>
+                <p>Looking for: Part time</p>
+                <p>Top skill: Javascript</p>
+              </div>
+            </div>
+            <div
+              class="grid-item"
+              onclick="handleGraduateClick('Yui Suzuki', 'Internship', 'Javascript')"
+            >
+              <div class="grid-item6">
+                <img
+                  src="https://ca.slack-edge.com/T024UKMKVCL-U05NXBNDD9Q-ab28f34a5e12-512"
+                  alt=""
+                  style="width: 100%"
+                />
+                <h4><b>Yui Suzuki</b></h4>
+                <p>Looking for: Internship</p>
+                <p>Top skill: Javascript</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </main>
     <footer class="footer">
-          <a href="https://www.redi-school.org/">
-            <img src="asset/rediLogo.png" class="logo" alt="Redi School logo" />
-          </a>
-        </div>
-        <div class="row">
+      <a href="https://www.redi-school.org/">
+        <img
+          src="asset/rediRemoveBackgroud.png"
+          class="logo"
+          alt="Redi School logo"
+        />
+      </a>
+      <div class="row">
         <div class="column">
           <h5>Pages</h5>
           <ul class="list-unstyled">
@@ -142,8 +218,11 @@
         <div class="column">
           <h5>Contact</h5>
           <ul class="list-unstyled">
-            <p>ReDI School of Digital Integration gGmbH c/o AIOS Tax AGSchönhauser Allee 10-1110119 Berlin</p>
-            <li><a href="">contact@redischool.com</a></li>
+            <p>
+              ReDI School of Digital Integration gGmbH c/o AIOS Tax
+              AGSchönhauser Allee 10-1110119 Berlin
+            </p>
+            <li><a href="mailto:@redischool.com">contact@redischool.com</a></li>
             <li><a href="">(123) 456-7890</a></li>
           </ul>
         </div>
