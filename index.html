@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-r4H/JkEPcvD54vb3Dfl3VFCtr4WOnbJ42CnxzRksx5lW4vFK5sdqy5w2MKz3LZP2"
+      crossorigin="anonymous"
+    />
 
     <title>Redi Alumni Website</title>
   </head>
@@ -186,48 +192,134 @@
         </main>
       </div>
     </main>
-    <footer class="footer">
-      <a href="https://www.redi-school.org/">
-        <img
-          src="asset/rediRemoveBackgroud.png"
-          class="logo"
-          alt="Redi School logo"
-        />
-      </a>
-      <div class="row">
-        <div class="column">
-          <h5>Pages</h5>
-          <ul class="list-unstyled">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Our Project</a></li>
-            <li><a href="">Our Team</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Services</a></li>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left-container">
+          <ul class="footer-left list-unstyled">
+            <a href="https://www.redi-school.org/">
+              <img
+                src="asset/rediRemoveBackgroud.png"
+                class="logo"
+                alt="Redi School logo"
+            /></a>
+            <li>Subscribe to our Newsletter</li>
+            <li>
+              Sign up with your email address to receive monthly news and
+              updates.
+            </li>
+            <li>Email Address</li>
+            <li>
+              <input
+                id="email-field"
+                class="newsletter-form-element field-element"
+                name="email"
+                type="email"
+                spellcheck="false"
+                placeholder="Email Address"
+              />
+              <button type="button" onclick="">Sign Up</button>
+            </li>
+            <li>We respect your privacy.</li>
+            <li>Thank you!</li>
           </ul>
         </div>
-        <div class="column">
-          <h5>Courses</h5>
-          <ul class="list-unstyled">
-            <li><a href="">UX/UI Design</a></li>
-            <li><a href="">Javascript</a></li>
-            <li><a href="">Cybersecurity</a></li>
-            <li><a href="">Data Analytics</a></li>
-            <li><a href="">Python</a></li>
-          </ul>
+        <div class="footer-left-container">
+          <div class="row">
+            <div class="column">
+              <h5>Pages</h5>
+              <ul class="list-unstyled">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our Project</a></li>
+                <li><a href="">Our Team</a></li>
+                <li>
+                  <a href="https://www.redi-school.org/contact">Contact Us</a>
+                </li>
+                <li><a href="">Services</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Courses</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="https://www.redi-school.org/user-centered-design/aarhus/dwp/ux-ui-design-basics"
+                    >UX/UI Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.redi-school.org/web-development/aarhus/dwp/javascript-ii"
+                    >javascript-ii</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.redi-school.org/cybersecurity/aarhus/dwp/introduction-to-cybersecurity"
+                    >Cybersecurity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.redi-school.org/data-analytics/aarhus/dwp/introduction-to-data-analytics"
+                    >Data Analytics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.redi-school.org/web-development/aarhus/dwp/introduction-to-javascript"
+                    >Javascript</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <a href="Mehringdamm 55, 10961 Berlin, Tyskland">
+                  ReDI School of Digital Integration gGmbH c/o AIOS Tax
+                  AGSchönhauser Allee 10-1110119 Berlin</a
+                >
+
+                <li>
+                  <a href="mailto:@redischool.com">contact@redischool.com</a>
+                </li>
+                <li><a href="">(123) 456-7890</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="column">
-          <h5>Contact</h5>
-          <ul class="list-unstyled">
-            <p>
-              ReDI School of Digital Integration gGmbH c/o AIOS Tax
-              AGSchönhauser Allee 10-1110119 Berlin
-            </p>
-            <li><a href="mailto:@redischool.com">contact@redischool.com</a></li>
-            <li><a href="">(123) 456-7890</a></li>
-          </ul>
+      </div>
+      <hr />
+      <div class="social-media">
+        <div class="social-media-container">
+          <a
+            href="https://www.linkedin.com/school/redi-school-of-digital-integration/"
+            target="_blank"
+          >
+            <img
+              class="icon"
+              src="asset/linkin-removebg-preview.png"
+              alt="linkedin img"
+            />
+          </a>
+          <a href="https://www.facebook.com/redischooldk/" target="_blank">
+            <img class="icon" src="asset/facebook.png" alt="facebook img" />
+          </a>
+          <a
+            href="https://www.youtube.com/c/ReDISchoolofDigitalIntegration"
+            target="_blank"
+          >
+            <img
+              class="icon"
+              src="asset/youtube-removebg-preview.png"
+              alt="youtube img"
+            />
+          </a>
         </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

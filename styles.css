@@ -18,7 +18,7 @@ header{
 }
 .logo {
     height: 53px;
-    margin-left: 87px;
+    margin-left: 4px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -47,7 +47,7 @@ a{
 }
 a:hover{
     color: rgb(185, 183, 182);
-    font-size: 1.3rem;
+    
 }
 /*search*/
 .fa {
@@ -67,7 +67,7 @@ a:hover{
    display: flex;
    justify-content: start;
    flex-direction: column;
-   height: 35vh;
+   height: 29vh;
    padding: 10px;
 }
 h1{
@@ -81,32 +81,18 @@ h2{
   padding: 20px;
   font-weight: normal;
 }
-/*filters*/
-/* #filter-dropdown{
-    display: flex;
-    justify-content: space-between;
-
-    color: rgb(34, 33, 33);
-    padding-right: 150px;
-}
-button{
-    color: rgb(34, 33, 33);
-    padding: 10px 20px;
-    font-size: 12px;
-    background-color: rgb(255, 255, 255);
-    cursor : pointer;
-} */
 
 /*dropdown*/
 .filter {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: start;
   margin-bottom: 20px;
 }
 
 .filter select {
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 71px;
   width: 210px;
 }
 
@@ -115,11 +101,16 @@ button{
 
 /*footer*/
 footer{
+  background-color: rgb(205, 203, 201);
+    
+}
+.footer-container{
     background-color: rgb(205, 203, 201);
     display: flex;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+    height: 46vh;
 }
 .row{
     display: flex;
@@ -141,7 +132,21 @@ h5{
   padding: 5px;
   margin: 5px;
 }
-/*Responsive layout*/
+.footer-left .list-unstyled{
+  padding-left: 10px;
+}
+/* social media */
+
+.social-media-container {
+  direction: flex;
+  flex-wrap: wrap;
+}
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+
 
 
 /* Yui started here */
@@ -210,7 +215,7 @@ h2 {
   img {
       border-radius: 30px 30px 0 0;
     }
-    @media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
       #desktop-nav {
         display: none;
       }
