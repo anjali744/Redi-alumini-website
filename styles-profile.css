@@ -116,6 +116,7 @@ h2 {
     padding: 20px 20px 20px 20px;
     line-height: 2;
     color: darkslategray;
+    font-size: large;
 }
 
 
@@ -133,13 +134,36 @@ h1 {
 
 
 
-#bio-text {
+.text-box {
     padding: 0px;
     line-height: 2;
     font-size: x-large;
     color: darkslategray;
 }
 
+.skill-label {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 200px;
+    align-items: flex-start;
+    
+}
+
+.label {
+    min-width: 100px; 
+    background-color:#ea5b25;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+.personal-imgs {
+    margin-top: 40px;
+}
 
 img.semi-rounded {
     object-fit: cover;
@@ -147,4 +171,5 @@ img.semi-rounded {
     height: 150px;
     width: 150px;
     margin: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
