@@ -30,6 +30,7 @@ header{
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .nav-links li {
     margin-left: 15px;
     list-style: none;
@@ -37,12 +38,15 @@ header{
 a{
   transition: color 0.3s;
   text-decoration: none;
-  color: black;
+  color: white
 }
 a:hover{
     color: rgb(185, 183, 182);
     font-size: 1.3rem;
 }
+.fnav-links{
+    color: black;
+  }
 /*search*/
 .fa {
     display: inline;
@@ -51,7 +55,7 @@ a:hover{
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale; 
 }
 /*Yui Started here*/
 /*flex-container*/

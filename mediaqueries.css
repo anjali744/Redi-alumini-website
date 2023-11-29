@@ -1,1 +1,7 @@
 /* this page for responsive mobile view */
+@media screen and (max-width: 720px) {
+    #desktop-nav {
+      display: none;
+    }
+
+}

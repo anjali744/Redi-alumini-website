@@ -1,0 +1,113 @@
+
+/*flex-container*/
+.flex-container {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* height: 200px; */
+}
+/*Left side container*/
+.left-container {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    padding: 20px 20px 20px 20px;
+    width: 40%;
+}
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.basic-info .Portfolio-info{
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;  
+}
+/*Right side container*/
+.right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 40px 20px 20px 150px;
+    width: 70%;
+}
+#bio-text {
+    padding: 0px;
+    line-height: 2;
+    font-size: x-large;
+    color: darkslategray;
+}
+h1 {
+    color: #58ADC5;
+}
+img.semi-rounded {
+    object-fit: cover;
+    border-radius: 30px;
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 10px 10px;
+}
+
+
+/*Anji Started here*/
+/*Left side-form style*/
+.formdesign {
+    font-size: 20px;
+}
+
+.formdesign input {
+    width: 80%;
+    padding: 12px 20px;
+    border: 1px solid rgb(234, 222, 222);
+    margin: 1px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color:rgb(221, 220, 220)
+}
+
+.formerror {
+    color: red;
+}
+
+.Portfolio-info{
+    height: 30rem;
+    padding: 15px 0;
+}
+#text-bar{
+    padding: 0px;
+    line-height: 2;
+    font-size: x-large;
+}
+
+/*Right side-form style*/
+#upload-files{
+    display: inline;
+    font-size: 5rem
+}
+input[type="file"]{
+    Display: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+label {
+    padding: 10px 15px;
+    background-color: rgb(221, 220, 220);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    Border: 1px dashed #999;
+    Border-radius: 10px;    
+}
+
+Label:hover {
+    Color:#58ADC5;
+    Border: 1px dashed #999;
+}
+/* #p1 #p2 #p3{
+    display: flex;
+    justify-content: center;
+} */
