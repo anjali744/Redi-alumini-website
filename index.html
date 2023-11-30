@@ -80,7 +80,7 @@
             <option value="Part time">Part time</option>
             <option value="Internship">Internship</option>
           </select>
-
+        
           <select id="locationFilter">
             <option value="">Location</option>
             <option value="Aarhus">Aarhus</option>
@@ -90,7 +90,7 @@
             <option value="Hamburg">Hamburg</option>
           </select>
           <div class="get-start-button">
-            <button class="getStartedBtn" type="button" onclick="">Get Started &#8594;</button>
+            <button class="getStartedBtn" id="getStartedBtn" type="button" onclick="">Get Started &#8594;</button>
           </div>
         </div>
       </div>
@@ -110,6 +110,7 @@
             <div
               class="grid-item"
               onclick="handleGraduateClick('Natalia Silvestre', 'Full time', 'UI design')"
+              data-location="Aarhus"
             >
               <div class="grid-item1">
                 <img

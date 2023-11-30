@@ -242,6 +242,10 @@ h2 {
     padding-left: 15px;
   }
   
+  dd {
+    padding-left: 10px;
+  }
+
   /* Y: On mouse-over, add a deeper shadow */
   .grid-item:hover {
       box-shadow: 8px 8px 10px 8px rgba(0,0,0,0.2);
