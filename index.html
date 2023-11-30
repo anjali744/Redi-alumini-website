@@ -61,12 +61,12 @@
     <main>
       <div class="top">
         <h1>Welcome to our Alumni database!</h1>
-        <h2>Find our new employee here</h2>
+        <p id="aboveCategoryBtn">Find our new employee here</p>
 
         <!--anj adding dropdown-->
         <div class="filter">
           <select id="categoryFilter">
-            <option value="">Select Category</option>
+            <option value="">Category</option>
             <option value="Web Developer">Web Developer</option>
             <option value="UX/UI Designer">UX/UI Designer</option>
             <option value="Data Analytics">Data Analytics</option>
@@ -75,20 +75,22 @@
           </select>
 
           <select id="durationFilter">
-            <option value="">Select Duration</option>
+            <option value="">Job type</option>
             <option value="Full time">Full time</option>
             <option value="Part time">Part time</option>
             <option value="Internship">Internship</option>
           </select>
 
           <select id="locationFilter">
-            <option value="">Select Location</option>
+            <option value="">Location</option>
+            <option value="Aarhus">Aarhus</option>
+            <option value="Copenhagen">Copenhagen</option>
             <option value="Berlin">Berlin</option>
             <option value="Munich">Munich</option>
             <option value="Hamburg">Hamburg</option>
           </select>
           <div class="get-start-button">
-            <button type="button" onclick="">Get Started -></button>
+            <button class="getStartedBtn" type="button" onclick="">Get Started &#8594;</button>
           </div>
         </div>
       </div>
@@ -101,7 +103,7 @@
             <h1>Some of our fantastic graduates</h1>
             <p>
               Use the filters above to find the exact person you are searching
-              for.
+              for
             </p>
           </div>
           <div class="grid-container">
@@ -120,7 +122,7 @@
                 <p>Looking for: Full time</p>
                 <p>Top skill: UI design</p>
                 <a href="profile.html" target="_blank"></a>
-                <!-- Y: need to figure out how to not hard code this action/event. -->
+                <!-- Y: need to figure out how to not hard code this (action/event). -->
               </div>
             </div>
             <div

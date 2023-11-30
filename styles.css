@@ -101,6 +101,19 @@ h2{
   width: 210px;
 }
 
+/* Y modifying get started button */
+.getStartedBtn {
+  background-color: #4D5053;
+  border: none;
+  color: #F4F0EC;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
 
 
 
@@ -172,10 +185,17 @@ h2 {
   }
   
   p {
+    font-family: 'NunitoSans',sans-serif ;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
+  #aboveCategoryBtn {
+    font-family: 'NunitoSans',sans-serif ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 28px;
+  }
+
   /* Y: section title */
   .section-title {
       text-align: center;
