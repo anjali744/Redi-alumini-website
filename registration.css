@@ -9,8 +9,9 @@
 .left-container {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 50px;
     width: 40%;
+    align-content: center;
 }
 .circle {
     display: flex;
@@ -28,11 +29,11 @@
     align-items: center;
     justify-content: center;
 }
-/* #preview-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+#preview-img {
+    max-width: 220px;
+    max-height: 220px;
+    color: white;
+}
 .basic-info .Portfolio-info{
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px 20px;
@@ -42,7 +43,7 @@
 .right-container {
     display: flex;
     flex-direction: column;
-    margin: 40px 20px 20px 150px;
+    margin: 40px 20px 20px 50px;
     width: 70%;
 }
 #bio-text {
@@ -125,7 +126,7 @@ Label:hover {
 }
 button{
     margin: 5px 15px 0px 10px;
-    padding: 14px;
+    padding: 10px;
     background-color: white;
     cursor: pointer;
     border-radius: 10%;
@@ -160,7 +161,7 @@ h10{
 .submit-buttom{
     display: flex;
     justify-content: end;
-    padding: 50px 50px 30px 30px;
+    padding: 20px 50px 30px 50px;
 }
 .box-container {
     width: 180px;

@@ -9,16 +9,19 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 10px
 }
 .logo {
-  height: 53px;
-  margin-left: 87px;
+  height: 54px;
+  margin-left: 65px;
   display: flex;
   justify-content: start;
   align-items: center;
   border-radius: 0 !important;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
+
 /*nav details*/
 .container{
     display: inline;

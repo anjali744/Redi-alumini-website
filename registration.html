@@ -60,9 +60,11 @@
           <div class="flex-container">
             <!--Left side column-->
             <div class="left-container">
+              <img id="preview-img" src="#" alt="Image Preview" />
+
               <div class="circle">
                 <div class="circle-container">
-                  <input type="file" id="img" />
+                  <input type="file" id="img" onchange="previewImage()" />
                   <label for="img"> + </label>
                 </div>
               </div>
@@ -221,13 +223,13 @@ maximun 200 characters"
     <footer>
       <div class="footer-container">
         <div class="footer-left-container">
+          <a href="https://www.redi-school.org/">
+            <img
+              src="asset/rediWhitelogo-removebg-preview.png"
+              class="logo"
+              alt="Redi School logo"
+          /></a>
           <ul class="footer-left list-unstyled">
-            <a href="https://www.redi-school.org/">
-              <img
-                src="asset/rediWhitelogo-removebg-preview.png"
-                class="logo"
-                alt="Redi School logo"
-            /></a>
             <li>Subscribe to our Newsletter</li>
             <li>
               Sign up with your email address to receive monthly news and
