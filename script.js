@@ -1,14 +1,14 @@
 
-function handleGraduateClick(name, duration, topSkill) {
-    alert(`Clicked on ${name}. Looking for: ${duration}. Top skill: ${topSkill}`);
-}
+//function handleGraduateClick(name, duration, topSkill) {
+//    alert(`Clicked on ${name}. Looking for: ${duration}. Top skill: ${topSkill}`);
+//}
 // Sample data for demonstration
-const alumniData = [
-    { name: "Natalia Silvestre", category: "UX/UI Designer", duration: "Full time", location: "Berlin" },
-    { name: "Maria Del Pilar Salerno", category: "UX/UI Designer", duration: "Part time", location: "Munich" },
-    { name: "Eva Mozule", category: "Web Developer", duration: "Internship", location: "Hamburg" },
-    // Add more alumni data as needed
-];
+//const alumniData = [
+//    { name: "Natalia Silvestre", category: "UX/UI Designer", duration: "Full time", location: "Berlin" },
+//    { name: "Maria Del Pilar Salerno", category: "UX/UI Designer", duration: "Part time", location: "Munich" },
+//    { name: "Eva Mozule", category: "Web Developer", duration: "Internship", location: "Hamburg" },
+//    // Add more alumni data as needed
+//];
 
 // Function to filter alumni based on selected values
 function filterAlumni() {
@@ -106,6 +106,8 @@ function handleGetStartedClick(event) {
 // Install click handler on the Get Started button.
 document.getElementById("getStartedBtn").addEventListener("click", handleGetStartedClick);
 //Yui end here.
+
+
 
 //6 button: user can select the course by button in registation page.
 
