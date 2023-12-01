@@ -9,7 +9,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 9vh;
+    flex-wrap: wrap;
 }
 .logo {
     height: 53px;
@@ -28,7 +28,7 @@ header{
     justify-content: flex-end;
     margin-right: 79px;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -38,7 +38,7 @@ header{
 a{
   transition: color 0.3s;
   text-decoration: none;
-  color: white
+  color: black
 }
 a:hover{
     color: rgb(185, 183, 182);
@@ -63,7 +63,7 @@ a:hover{
     margin: 30px 0px 0px 0px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     /*height: 200px;*/
     align-items: center;
     justify-content: center;

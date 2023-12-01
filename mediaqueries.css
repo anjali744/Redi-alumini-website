@@ -3,5 +3,45 @@
     #desktop-nav {
       display: none;
     }
-
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: auto;
+    }
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 {
+     padding: 20px;
+    }
+    nav-links li {
+      margin: auto;
+      text-align: center;
+    }
+    h1{
+      padding: 10px;
+  }
+  .right-container {
+    margin: auto;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .left-container {
+    padding: 27px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .upload-files{
+    flex-direction: column;
+  }
+  .flex-container {
+    margin:  0px;
+  }
+  #bio{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .text-box {
+    font-size: 16px;
+  }
 }

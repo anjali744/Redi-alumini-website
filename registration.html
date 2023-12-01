@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="registration.css" />
-    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <title>Registration Form</title>
     <link
       rel="stylesheet"
@@ -59,13 +60,11 @@
           <div class="flex-container">
             <!--Left side column-->
             <div class="left-container">
-              <div class="picture">
-                <img
-                  src="https://ca.slack-edge.com/T024UKMKVCL-U05S6HG0K0Q-c46e9cef3a0c-512"
-                  alt="profile pics"
-                  style="width: 85%"
-                  class="rounded"
-                />
+              <div class="circle">
+                <div class="circle-container">
+                  <input type="file" id="img" />
+                  <label for="img"> + </label>
+                </div>
               </div>
               <div class="basic-info">
                 <div class="formdesign" id="name">
@@ -78,15 +77,15 @@
                 </div>
                 <div class="formdesign" id="course">
                   <input
-                    type="text"
+                    type="course"
                     name="fcourse"
                     placeholder="Course"
                     required
                   /><b><span class="formerror"> </span></b>
                 </div>
-                <div class="formdesign" id="job-type">
+                <div class="formdesign" id="jobtype">
                   <input
-                    type="text"
+                    type="job"
                     name="fjobtype"
                     placeholder="Job-type"
                     required
@@ -94,7 +93,7 @@
                 </div>
                 <div class="formdesign" id="location">
                   <input
-                    type="text"
+                    type="location"
                     name="flocation"
                     placeholder="Location"
                     required
@@ -106,17 +105,19 @@
                     name="fsocial"
                     placeholder="Enter Social media links/URL"
                     required
-                  /><b><span class="formerror"> </span></b>
+                  /><b><span class="formerror"></span></b>
                 </div>
               </div>
               <!--Left side column: CV & Portfolio -->
               <div class="Portfolio-info">
                 <div class="formdesign" id="Portfolio">
-                  <input
-                    type="text"
-                    name="fportfolio"
-                    placeholder="Add your portfollio & cv"
-                  /><b><span class="formerror"> </span></b>
+                  <textarea
+                    id="email"
+                    name="femail"
+                    placeholder="Add your portfolio and CV"
+                    rows="30"
+                    cols="30"
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -125,53 +126,95 @@
               <div id="bio">
                 <h1>Bio</h1>
                 <div class="formdesign" id="bio">
-                  <input
+                  <textarea
                     type="text"
                     name="fbio"
-                    placeholder="Share an achievement that showcases your skills. Describe a project or accomplishment, highlighting the skills you used to overcome challenges and succeed...
-                    Maximun 500 characters"
-                    required
-                  /><b><span class="formerror"> </span></b>
+                    placeholder="Share an achievement that showcases your skills. Describe a project or accomplishment, highlighting the skills you used to overcome challenges and succeed... 
+
+Maximun 500 characters"
+                    rows="12"
+                    cols="30"
+                  ></textarea>
                 </div>
               </div>
-              <div class="key-skills">
+              <div class="key-skills-container">
                 <h1>Key skills</h1>
                 <div class="formdesign" id="key-skills">
-                  <input
-                    type="text"
-                    name="fskills"
-                    placeholder="Share an achievement that showcases your skills. Describe a project or accomplishment, highlighting the skills you used to overcome challenges and succeed...
-                        Maximun 500 characters"
-                  /><b><span class="formerror"> </span></b>
+                  <!-- using script -->
+                  <div class="skill-container">
+                    <input
+                      type="btn"
+                      id="resultInput"
+                      placeholder="Write your skills, up to 6."
+                    />
+                    <div>
+                      <button onclick="toggleSkill('UX/UI')">UX/UI</button>
+                      <button onclick="toggleSkill('Figma')">Figma</button>
+                      <button onclick="toggleSkill('Javascript')">
+                        Javascript
+                      </button>
+                      <button onclick="toggleSkill('Teamwork')">
+                        Teamwork
+                      </button>
+                      <button onclick="toggleSkill('Communication')">
+                        Communication
+                      </button>
+                      <button onclick="toggleSkill('Scrum')">Scrum</button>
+                      <button onclick="toggleSkill('Research')">
+                        Research
+                      </button>
+                      <button onclick="toggleSkill('Testing')">Testing</button>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div class="achievements">
                 <h1>Achievements</h1>
                 <div class="formdesign" id="achievements">
-                  <input
+                  <textarea
                     type="text"
                     name="fachievements"
-                    placeholder="Share an achievement that showcases your skills. Describe a project or accomplishment, highlighting the skills you used to overcome challenges and succeed...maximun 200 characters"
-                  /><b><span class="formerror"> </span></b>
+                    placeholder="Share an achievement that showcases your skills. Describe a project or accomplishment, highlighting the skills you used to overcome challenges and succeed...
+
+maximun 200 characters"
+                    rows="6"
+                    cols="30"
+                  ></textarea>
                 </div>
               </div>
-              <div class="picture" id="upload-files">
-                <div class="picture1">
-                  <input type="file" id="p1" />
-                  <label for="file">+</label>
-                </div>
-                <div class="picture2">
-                  <input type="file" id="p2" />
-                  <label for="file">+</label>
-                </div>
-                <div class="picture3">
-                  <input type="file" id="p3" />
-                  <label for="file">+</label>
+              <div class="files-container" id="upload">
+                <h10>
+                  Add some photos that showcase your personality. Select
+                  snapshots that highlight your passions, hobbies, or moments
+                  that define who you are
+                </h10>
+                <div class="upload-files">
+                  <div class="files">
+                    <div class="box-container">
+                      <input type="file" id="p1" />
+                      <label for="p1"> + </label>
+                    </div>
+                  </div>
+                  <div class="files">
+                    <div class="box-container">
+                      <input type="file" id="p2" />
+                      <label for="p2"> + </label>
+                    </div>
+                  </div>
+                  <div class="files">
+                    <div class="box-container">
+                      <input type="file" id="p3" />
+                      <label for="p3"> + </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <input class="but" type="submit" value="Submit" />
+          <div class="submit-buttom">
+            <input class="but" type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     </main>
@@ -301,5 +344,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

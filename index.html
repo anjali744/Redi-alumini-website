@@ -80,7 +80,7 @@
             <option value="Part time">Part time</option>
             <option value="Internship">Internship</option>
           </select>
-        
+
           <select id="locationFilter">
             <option value="">Location</option>
             <option value="Aarhus">Aarhus</option>
@@ -90,7 +90,14 @@
             <option value="Hamburg">Hamburg</option>
           </select>
           <div class="get-start-button">
-            <button class="getStartedBtn" id="getStartedBtn" type="button" onclick="">Get Started &#8594;</button>
+            <button
+              class="getStartedBtn"
+              id="getStartedBtn"
+              type="button"
+              onclick=""
+            >
+              Get Started &#8594;
+            </button>
           </div>
         </div>
       </div>
@@ -107,11 +114,7 @@
             </p>
           </div>
           <div class="grid-container">
-            <div
-              class="grid-item"
-              onclick="handleGraduateClick('Natalia Silvestre', 'Full time', 'UI design')"
-              data-location="Aarhus"
-            >
+            <div class="grid-item">
               <div class="grid-item1">
                 <img
                   src="https://ca.slack-edge.com/T024UKMKVCL-U05S6HG0K0Q-c46e9cef3a0c-512"
@@ -126,10 +129,7 @@
                 <!-- Y: need to figure out how to not hard code this (action/event). -->
               </div>
             </div>
-            <div
-              class="grid-item"
-              onclick="handleGraduateClick('Maria Del Pilar Salerno', 'Part time', 'UI design')"
-            >
+            <div class="grid-item">
               <div class="grid-item2">
                 <img
                   src="https://ca.slack-edge.com/T024UKMKVCL-U05NUE5AYPP-d6079d6da160-512"
@@ -141,10 +141,7 @@
                 <p>Top skill: UI design</p>
               </div>
             </div>
-            <div
-              class="grid-item"
-              onclick="handleGraduateClick('Eva Mozule', 'Internship', 'UX design')"
-            >
+            <div class="grid-item">
               <div class="grid-item3">
                 <img
                   src="https://ca.slack-edge.com/T024UKMKVCL-U05QF29GW91-8a8d5f774de3-512"
@@ -156,10 +153,7 @@
                 <p>Top skill: UX design</p>
               </div>
             </div>
-            <div
-              class="grid-item"
-              onclick="handleGraduateClick('Emily Ferguson', 'Full time', 'UX design')"
-            >
+            <div class="grid-item">
               <div class="grid-item4">
                 <img
                   src="https://ca.slack-edge.com/T024UKMKVCL-U05QTGRC0CB-36af5cd4cf75-512"
@@ -171,10 +165,7 @@
                 <p>Top skill: UX design</p>
               </div>
             </div>
-            <div
-              class="grid-item"
-              onclick="handleGraduateClick('Anjali Kumari', 'Part time', 'Javascript')"
-            >
+            <div class="grid-item">
               <div class="grid-item5">
                 <img
                   src="https://ca.slack-edge.com/T024UKMKVCL-U04TYE2L4JU-6ba056b0026a-512"
@@ -186,10 +177,7 @@
                 <p>Top skill: Javascript</p>
               </div>
             </div>
-            <div
-              class="grid-item"
-              onclick="handleGraduateClick('Yui Suzuki', 'Internship', 'Javascript')"
-            >
+            <div class="grid-item">
               <div class="grid-item6">
                 <img
                   src="https://ca.slack-edge.com/T024UKMKVCL-U05NXBNDD9Q-ab28f34a5e12-512"
@@ -231,8 +219,9 @@
                 spellcheck="false"
                 placeholder="Email Address"
               />
-              <a href="registration.html"></a>
-              <button type="button" onclick="">Sign Up</button>
+              <a href="registration.html">
+                <button type="button" onclick="">Sign Up</button>
+              </a>
             </li>
             <li>We respect your privacy.</li>
             <li>Thank you!</li>
